@@ -4,5 +4,6 @@ runs:
   using: "composite"
   steps:
     - name: say-hello
+      shell: bash
       run: |
         echo "hello there"
