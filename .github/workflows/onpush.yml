@@ -9,10 +9,7 @@ jobs:
 
     - name: Call Composite Action say-hello
       uses: ./actions
-      id: say-hello
-      with:
-        name: 'Doug'
 
     - name: echo output from say-hello
       run: |
-        echo ${{ steps.say-hello.outputs.greeting }}
+        echo "done"
