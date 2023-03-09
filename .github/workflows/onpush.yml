@@ -1,5 +1,9 @@
 name: Greetings
-on: [workflow_dispatch]
+# on: [workflow_dispatch]
+on:
+  push:
+    branches:
+      - test
 jobs:
   greeting:
     runs-on: ubuntu-latest
@@ -12,4 +16,4 @@ jobs:
 
     - name: echo output from say-hello
       run: |
-        echo "done"
+        echo "done test environment"
